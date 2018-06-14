@@ -13,22 +13,95 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: shogonir
+github_username:  shogonir
+
+
+
+title: shogonir blog
+name: shogonir
+email: shogonir@gmail.com
+description: Tech blog written by shogonir.
+
+theme: jekyll-material-theme
+
+parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
+parallax_image_two: assets/images/startup3.jpg
+
+# Settings for the porfolio section
+
+portfolio_heading: Portfolio
+portfolio_type: cards #cards or carousel
+
+project_one: "OZu"
+project_one_description: "I represented OZ world of 'Summer Wars'!"
+project_one_url: http://shogonir.jp/unity/ozu
+project_one_icon: location_on # these are from materiailize css, the full collection is here: http://materializecss.com/icons.html
+
+project_two: "Mechanical Watch Movement"
+project_two_description: "I represented mechanical watch movement with Unity."
+project_two_url: http://shogonir.jp/unity/mwm
+project_two_icon: location_on # these are from materiailize css, the full collection is here: http://materializecss.com/icons.html
+
+# project_three: Third Project
+# project_three_description: Describe your project!
+# project_three_url: https://github.com/jameshamann/jekyll-material-theme
+# project_three_icon: hotel
+
+# project_four: Fourth Project
+# project_four_description: Describe your project!
+# project_four_url: https://github.com/jameshamann/jekyll-material-theme
+# project_four_icon: restaurant
+
+# Skill icons from https://konpa.github.io/devicon/
+
+skills:
+  - name: linux
+  - name: android
+  - name: vim
+  - name: docker
+  - name: git
+  - name: github
+  - name: c
+  - name: cplusplus
+  - name: csharp
+  - name: python
+  - name: go
+  - name: java
+  - name: javascript
+  - name: typescript
+  - name: nodejs
+  - name: mocha
+  - name: babel
+  - name: webpack
+
+icon_size: 40 # font-size of icons in px
+colored: colored # Leave blank for black and white icons
+
+project_button: Unity
+
+github: https://github.com/shogonir
+
+baseurl: # If your site is located at /blog or /home, change it here, otherwise leave it empty
+url: http://localhost:4000/ # The URL of your site
+
+# Google tracking, if both are filled, tag manager will prevail. Set up GA through GTM in that case
+tag_manager_id: # This looks something like GTM-XXXXXXX
+google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
+
+cookie_accept_message: Thanks! # The pop-up dialog that appears after accepting the cookie notice.
+
+syntax_highlighting: true # include the css for syntax highlighting
 
 # Build settings
 markdown: kramdown
-theme: minima
+permalink: pretty
 plugins:
   - jekyll-feed
+  - jekyll-assets
+  - jekyll-minifier
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
