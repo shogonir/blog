@@ -51,7 +51,7 @@ $$
 
 &nbsp;  
 
-[http://blog.shogonir.jp/entry/2018/04/29/121201 :embed:cite]
+[フィボナッチ数列は再帰で実装するな - shogonir blog](http://blog.shogonir.jp/entry/2018/04/29/121201 "フィボナッチ数列は再帰で実装するな - shogonir blog")
 
 &nbsp;  
 
