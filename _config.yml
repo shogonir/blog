@@ -27,8 +27,8 @@ description: Tech blog written by shogonir.
 
 theme: jekyll-material-theme
 
-parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
-parallax_image_two: assets/images/startup3.jpg
+parallax_image_one: assets/images/default/startup3.jpg # These are the images used for the parallax background
+parallax_image_two: assets/images/default/startup3.jpg
 
 # Settings for the porfolio section
 
