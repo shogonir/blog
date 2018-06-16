@@ -3,7 +3,7 @@
 
   <div class="col s12 m12">
     <div class="card">
-      <img src="{{post.image}}" class="blog-feed-image left">
+      <img src="{{site.baseurl}}/assets/images/{{post.image}}" class="blog-feed-image left">
       <div class="card-image" style="min-height: 140px;">
 
         <span class="card-title">
@@ -12,7 +12,7 @@
         <h5 class="blog-feed-title">
           {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
           <span style="color: black;">{{post.date | date: date_format}} &nbsp; </span>
-          <a href="{{post.url}}" style=" "> {{ post.title | escape }}</a>
+          <a href="{{site.baseurl}}{{post.url}}" style=" "> {{ post.title | escape }}</a>
         </h5>
         <div class="card-content ">
           <p>{{post.excerpt}}</p>

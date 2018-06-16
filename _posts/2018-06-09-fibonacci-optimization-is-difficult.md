@@ -2,7 +2,7 @@
 layout: post
 date:   2018-06-09
 categories: math
-image: /assets/images/paint/FibonacciSeries.png
+image: paint/FibonacciSeries.png
 title:  "フィボナッチ数列の第k項をO(log n)で計算しようとしたけど難しかった話"
 ---
 フィボナッチ数列の計算を最適化してO(log n)を目指したのですが、そう簡単には高速化は叶いませんでした。。  
