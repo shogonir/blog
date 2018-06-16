@@ -1,24 +1,21 @@
 <div class="row">
   {% for post in site.posts %}
-
   <div class="col s12 m12">
     <div class="card">
-      <img src="{{site.baseurl}}/assets/images/{{post.image}}" class="blog-feed-image left">
+      <div class="left">
+        {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
+        <span class="blog-feed-date">{{post.date | date: date_format}}</span>
+        <br/>
+        <img src="{{site.baseurl}}/assets/images/{{post.image}}" class="blog-feed-image">
+      </div>
       <div class="card-image" style="min-height: 140px;">
-
-        <span class="card-title">
-
-        </span>
         <h5 class="blog-feed-title">
-          {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
-          <span style="color: black;">{{post.date | date: date_format}} &nbsp; </span>
-          <a href="{{site.baseurl}}{{post.url}}" style=" "> {{ post.title | escape }}</a>
+          <a href="{{site.baseurl}}{{post.url}}"> {{ post.title | escape }}</a>
         </h5>
-        <div class="card-content ">
+        <div class="card-content" style="padding: 12px;">
           <p>{{post.excerpt}}</p>
         </div>
       </div>
-
     </div>
   </div>
   {% endfor %}
