@@ -9448,7 +9448,7 @@
     font-size: 1.2em;
   }
 
-  code {
+  code.highlighter-rouge {
     border: solid 1px #eaeaea;
     background-color: #f8f8f8;
     border-radius: 3px;
@@ -9456,4 +9456,8 @@
     padding: 0 5px;
     font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
     font-size: 90%;
+  }
+
+  pre.highlight {
+    background: #eee;
   }
